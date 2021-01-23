@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET CRUD</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./dist/style/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <nav class="navbar navbar-dark bg-primary d-flex">
+                <div class="js_register_event_register container">
+                    <a class="navbar-brand" href="#">
+                        PET CRUD
+                    </a>
+                    <button type="button" class="js_add_header d-none btn btn-success btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">AGREGAR MASCOTA</button>
+                </div>
+
+            </nav>
+
+        </header>
+        <main>
+            <div class="container h-100">
+                <div class="js_register_event_register js_add h-100 view-add d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">AGREGAR MASCOTA</button>
+                </div>
+
+                <div class="p-4 grid" id="app">
+                </div>
+            </div>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <form class="js_form">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Agregar Mascota</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="row">
+                                    <div class="col mb-4">
+                                        <input type="text" class="form-control js_name" placeholder="Nombre">
+                                    </div>
+                                    <div class="col mb-4">
+                                        <input type="text" class="form-control js_lastname" placeholder="Apellido">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col mb-4">
+                                        <input type="text" class="form-control js_raza" placeholder="raza">
+                                    </div>
+                                    <div class="col mb-4">
+                                        <input type="text" class="form-control js_phone" placeholder="Telefono">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col mb-4">
+                                        <select class="form-control  js_country">
+                                            <option value="">Pais</option>
+                                            <option value="peru">Perú</option>
+                                            <option value="argentina">Argentina</option>
+                                            <option value="ecuador">Ecuador</option>
+                                        </select>
+                                    </div>
+                                    <div class="col mb-4">
+                                        <input type="text" class="form-control  js_photo"
+                                            placeholder="Url de Fotografia">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <form class="js_form_confirm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Borrar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>Estas seguro que deseas eliminarlo?</h2>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NO
+                                    GRACIAS</button>
+                                <button type="submit" class="btn btn-primary">SI ESTOY SEGURO</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./src/scripts/main.js"></script>
+</body>
+</html>

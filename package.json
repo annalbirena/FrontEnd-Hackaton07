@@ -1,0 +1,20 @@
+{
+  "name": "sesion_5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "sass": "npx node-sass src/styles/main.scss dist/style/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "bootstrap": "^5.0.0-beta1"
+  },
+  "devDependencies": {
+    "json-server": "^0.16.3",
+    "node-sass": "^5.0.0"
+  }
+}

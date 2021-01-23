@@ -1,0 +1,52 @@
+/*
+LAYAOUT
+*/
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.wrap main {
+    flex-grow: 1;
+}
+
+/*
+VIEWS
+*/
+.view-add {
+    align-items: center;
+}
+
+/*
+HEADER
+*/
+.header {
+    color: #fff;
+}
+
+/*GRID*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+/*
+Card
+*/
+.card {
+    .icon {
+        position: absolute;
+        top: 10px;
+    }
+
+    .icon-left {
+        left: 10px;
+    }
+
+    .icon-right {
+        right: 10px;
+    }
+}

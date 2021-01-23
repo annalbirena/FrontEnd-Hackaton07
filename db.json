@@ -1,0 +1,31 @@
+{
+  "pets": [
+    {
+      "name": "Teo",
+      "lastname": "Doro",
+      "raza": "Labrador",
+      "phone": "999165092",
+      "country": "peru",
+      "photo": "",
+      "id": 1
+    },
+    {
+      "name": "Kanae",
+      "lastname": "Doro",
+      "raza": "labrador",
+      "phone": "999165092",
+      "country": "ecuador",
+      "photo": "",
+      "id": 2
+    },
+    {
+      "name": "Lola",
+      "lastname": "Dora",
+      "raza": "labrador",
+      "phone": "999165092",
+      "country": "ecuador",
+      "photo": "",
+      "id": 3
+    }
+  ]
+}
